@@ -1,0 +1,8 @@
+name    'winks-scponly'
+version '0.0.1'
+source 'UNKNOWN'
+author 'winks'
+license 'BSD License'
+summary 'UNKNOWN'
+description 'create chrooted scponly dirs via puppet'
+project_page 'https://github.com/winks/puppet-scponly'
