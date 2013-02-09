@@ -29,3 +29,15 @@ With all settings customized:
 This will create the folder `/opt/username` if it's not already there.
 The contents will basically look identical to the above example, but
 instead of the `incoming` directory there will be a `put_files_here` directory.
+
+On Debian squeeze (and maybe others) you might have to change the line
+```
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+```
+in `/etc/ssh/sshd_config` to
+```
+Subsystem sftp internal-sftp
+
+```
+to make scponly work, but I am not yet sure why.
